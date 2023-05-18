@@ -1,6 +1,6 @@
 # Les algorithmes de tri
 
-## Introduction
+## 1. Introduction
 
 ### *Qu'est-ce qu'un algorithme de tri ?*
 
@@ -14,7 +14,15 @@ Le tri permet de retrouver plus facilement un élément dans la liste et de gagn
 
 Il existe de nombreux algorithmes de tri. Chaque algorithme a ses avantages et ses inconvénients. Certains algorithmes sont plus adaptés pour trier des listes de nombres, d'autres pour trier des listes de mots, etc.
 
-## *Le tri par sélection*
+## 2. Activité
+
+Prenez un paquet de cartes et triez-les par ordre croissant avec la méthode de votre choix. Notez votre algorithme de tri.
+
+On va ensuite comparer les différents algorithmes de tri que vous avez utilisés.
+
+## 3. Le tri par sélection
+
+On va maintenant proposer un exemple d'algorithme de tri classique : le tri par sélection.
 
 Le tri par sélection est un algorithme de tri qui consiste à parcourir la liste à trier et à placer les éléments dans l'ordre croissant (ou décroissant).
 
@@ -22,10 +30,10 @@ Le tri par sélection est un algorithme de tri qui consiste à parcourir la list
 - On inverse sa place avec le premier élément non-trié de la liste
 - On recommence jusqu'à ce que la fin de la liste
 
-> Exemple : On souhaite trier la liste suivante : ['a', 'e', 4, 3, 1]
-> On recherche le plus petit élément de la liste : 1
-> On le place en position 0 en l'inversant avec 5
-> On recommence avec la liste [1, 2, 4, 3, 5]
+> Exemple : On souhaite trier la liste suivante : ['e', 'b', 'd', 'c', 'a']
+> On recherche le plus petit élément de la liste : 'a'
+> On le place en position 0 en l'inversant avec 'e'
+> On recommence avec la liste ['a', 'b', 'd', 'c', 'e']
 
 | Etape | Liste à trier | Partie triée |
 |-------|---------------|-------------|
@@ -44,7 +52,28 @@ Cet algorithme est simple à comprendre et à mettre en oeuvre. Cependant, il es
 
 ### **Question 2**
 
-    Implémentez cet algorithme en Python. Testez-le avec une liste d'élements aléatoires.
+    On va chercher à implémenter cette algorithme en Python. Pour cela on va utiliser une fonction echanger qui permet d'échanger deux éléments d'une liste.
+
+### **Question 3**
+
+    Implémentez une fonction qui permette de trouver l'indice du plus petit élément d'une liste.
+
+### **Question 4**
+
+    En utilisant les fonctions précédentes, implémentez l'algorithme de tri par sélection. Vous pouvez vous appuyer sur l'algorithme écrit précédemment
+    
+    et sur le code suivant :
+
+```python
+def tri_selection(liste):
+    for i in range(len(liste)):
+        # On cherche le plus petit élément de la liste
+        # On l'échange avec le premier élément non-trié
+```
+
+### **Question 5**
+
+    Testez votre algorithme sur une liste de 10000 éléments. Combien de temps met-il pour trier la liste ?
 
 ## *Le tri par insertion*
 
@@ -65,11 +94,11 @@ Le tri par insertion est un algorithme de tri qui consiste à parcourir la liste
 | 3 | [2, 4, 5, **3, 1**] | [2, 3, 4, 5] |
 | 4 | [2, 3, 4, 5, **1**] | [1, 2, 3, 4, 5] |
 
-### **Question 3**
+### **Question 6**
 
     Quelle est la complexité de cet algorithme ?
 
-### **Question 4**
+### **Question 7**
 
     Implémentez cet algorithme en Python.
 
