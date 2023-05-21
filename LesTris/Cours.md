@@ -14,6 +14,17 @@ Le tri permet de retrouver plus facilement un élément dans la liste et de gagn
 
 Il existe de nombreux algorithmes de tri. Chaque algorithme a ses avantages et ses inconvénients. Certains algorithmes sont plus adaptés pour trier des listes de nombres, d'autres pour trier des listes de mots, etc.
 
+## Activité
+
+1. Prenez un jeu de cartes et triez-le en utilisant la méthode de votre choix.
+   
+2. Comparez votre méthode avec celle des autres groupes.
+
+3. Remélangez le paquet et triez le selon l'algorithme suivant (du tri par selection):
+    + On recherche le plus petit élément de la liste
+    + On inverse sa place avec l'élement juste à la suite du dernier élément trié de la liste
+    + On recommence jusqu'à ce que la fin de la liste soit atteinte
+
 ## *Le tri par sélection*
 
 Le tri par sélection est un algorithme de tri qui consiste à parcourir la liste à trier et à placer les éléments dans l'ordre croissant (ou décroissant).
@@ -22,10 +33,10 @@ Le tri par sélection est un algorithme de tri qui consiste à parcourir la list
 - On inverse sa place avec le premier élément non-trié de la liste
 - On recommence jusqu'à ce que la fin de la liste
 
-> Exemple : On souhaite trier la liste suivante : ['a', 'e', 4, 3, 1]
-> On recherche le plus petit élément de la liste : 1
-> On le place en position 0 en l'inversant avec 5
-> On recommence avec la liste [1, 2, 4, 3, 5]
+> Exemple : On souhaite trier la liste suivante : ['e', 'b', 'd', 'c', 'a']
+> On recherche le plus petit élément de la liste : 'a'
+> On le place en position 0 en l'inversant avec 'e'
+> On recommence avec la liste ['a', 'b', 'd', 'c', 'e']
 
 | Etape | Liste à trier | Partie triée |
 |-------|---------------|-------------|

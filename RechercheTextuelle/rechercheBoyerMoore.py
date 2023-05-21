@@ -1,36 +1,27 @@
 def tableCorrespondance(mot):
     """Renvoi un dictionnaire représentant la table de correspondance associée au mot.
     
-    Arguments
-    ---------
-    mot: str
-        le mot dont on veut la table de correspondance
-
-    Returns
-    -------
-    dict
-        la table de correspondance associée au mot
+    @param mot: le mot dont on veut la table de correspondance
+    @return: un dictionnaire associant à chaque lettre du mot son décalage
     """
 
     # à compléter ...
 
+    dict = {}
+    for i in range(len(mot)):
+        dict[mot[i]] = len(mot) - i - 1
+    return dict
+
 def memeMot(texte, mot, indice):
     """Verifie à partir de l'indice de dernier charactère si le mot est le même.
 
-    Arguments
-    ---------
-    texte: str
-        le texte dans lequel on effectue la recherche
-    mot: str
-        le mot recherché
-    indice: int
-        l'indice du dernier charactère du mot dans le texte
-
-    Returns
-    -------
-    bool
-        renvoie True si le mot est le même
+    @param texte: le texte dans lequel on effectue la recherche
+    @param mot: le mot recherché
+    @param indice: l'indice du dernier charactère du mot dans le texte
+    @return: True si le mot est le même
     """
+
+    
 
     # à compléter ...
 

@@ -101,15 +101,10 @@ Le mot "abcba" aura donc la même table de correspondance :
 def tableCorrespondance(mot):
     """Renvoi un dictionnaire représentant la table de correspondance associée au mot.
     
-    Arguments
-    ---------
-    mot: str
-        le mot dont on veut la table de correspondance
-
-    Returns
-    -------
-    dict
-        la table de correspondance associée au mot
+    @Args :
+        mot : le mot dont on veut la table de correspondance
+    @Return :
+        dict : la table de correspondance associée au mot
     """
 ```
 
