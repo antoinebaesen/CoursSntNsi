@@ -59,7 +59,7 @@ Cet algorithme est simple à comprendre et à mettre en oeuvre. Cependant, il es
 
 ### **Question 3**
 
-    Implémentez une fonction qui permette de trouver l'indice du plus petit élément d'une liste.
+    Implémentez une fonction qui permette de trouver l'indice du plus petit élément d'une liste à partir d'un indice donné.
 
 ### **Question 4**
 
@@ -82,9 +82,8 @@ def tri_selection(liste):
 
 Le tri par insertion est un algorithme de tri qui consiste à parcourir la liste et à insérer chaque élément à sa place dans une nouvelle liste. Pour insérer un élément à sa place dans la nouvelle liste, on le compare avec les éléments déjà présents dans la nouvelle liste. On insère l'élément à sa place dès qu'on trouve un élément plus grand que lui.
 
-- On parcourt la liste
-- On parcours la nouvelle liste jusqu'à trouver un élément plus grand que l'élément à insérer
-- On insère l'élément à sa place juste avant l'élément plus grand
+- On parcourt la liste de ce qui n'est pas encore trié jusqu'à trouver un élément mal placé par rapport au précédent (ici un élément plus petit)
+- Tant que l'élément est mal placé (plus petit que le précédent), on l'inverse avec le précédent
 - On recommence jusqu'à la fin de la liste
 
 > Exemple : On souhaite trier la liste suivante : [5, 2, 4, 3, 1]
