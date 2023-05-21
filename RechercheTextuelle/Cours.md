@@ -16,6 +16,16 @@ La méthode naïve consiste à parcourir le texte et à comparer chaque caractè
 
     Implémentez cet algorithme en Python. Testez-le avec le texte et le mot "chat", puis avec le texte et le mot "chien".
 
+```python
+def rechercheNaive(texte, mot):
+    """
+    Recherche le mot dans le texte
+    @param texte: str, le texte dans lequel on recherche le mot
+    @param mot: str, le mot à rechercher
+    @return: bool
+    """
+```
+
 Cette méthode fonctionne mais elle est très lente. Si le mot recherché n'est pas dans le texte on doit quand meme réaliser toutes les comparaisons avec chacun des caractères du texte. On va donc chercher à améliorer cet algorithme.
 
 ## Méthode de Boyer-Moore Horspool
@@ -118,12 +128,16 @@ Grâce à la table de correspondance, on peut maintenant écrire une fonction av
 def avancer(texte, mot, indice):
     """
     Renvoi l'indice à partir duquel on doit rechercher le mot suivant.
-
-    indice : indice du dernier caractère du mot actuellement testé dans le texte.
+    @Args
+        texte: str, le texte dans lequel on recherche le mot
+        mot: str, le mot à rechercher
+        indice: int, l'indice du dernier charactère du mot à partir duquel on va tester
+    @Return:
+        int, l'indice à partir duquel on doit rechercher le mot suivant
     """
 ```
 
-### **Question 4**
+### **Question 5**
 
 Implémentez en Python une fonction memeMot telle que :
 
@@ -140,7 +154,7 @@ def memeMot(texte, mot, indice):
 
 Cette fonction sera utilisée pour tester si le mot recherché est présent à un indice donné du texte.
 
-### **Question 5**
+### **Question 6**
 
 Utilisez les fonctions précédentes pour compléter le code de la fonction rechercheBoyerMoore qui prend en paramètre un texte et un mot et qui renvoi si le mot est présent dans le texte.
 

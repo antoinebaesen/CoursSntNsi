@@ -1,6 +1,6 @@
 # Les algorithmes de tri
 
-## Introduction
+## 1. Introduction
 
 ### *Qu'est-ce qu'un algorithme de tri ?*
 
@@ -14,7 +14,7 @@ Le tri permet de retrouver plus facilement un élément dans la liste et de gagn
 
 Il existe de nombreux algorithmes de tri. Chaque algorithme a ses avantages et ses inconvénients. Certains algorithmes sont plus adaptés pour trier des listes de nombres, d'autres pour trier des listes de mots, etc.
 
-## Activité
+## 2. Activité
 
 1. Prenez un jeu de cartes et triez-le en utilisant la méthode de votre choix.
    
@@ -25,7 +25,7 @@ Il existe de nombreux algorithmes de tri. Chaque algorithme a ses avantages et s
     + On inverse sa place avec l'élement juste à la suite du dernier élément trié de la liste
     + On recommence jusqu'à ce que la fin de la liste soit atteinte
 
-## *Le tri par sélection*
+## 3. *Le tri par sélection*
 
 Le tri par sélection est un algorithme de tri qui consiste à parcourir la liste à trier et à placer les éléments dans l'ordre croissant (ou décroissant).
 
@@ -55,9 +55,30 @@ Cet algorithme est simple à comprendre et à mettre en oeuvre. Cependant, il es
 
 ### **Question 2**
 
-    Implémentez cet algorithme en Python. Testez-le avec une liste d'élements aléatoires.
+    On va chercher à implémenter cette algorithme en Python. Pour cela on va utiliser une fonction echanger qui permet d'échanger deux éléments d'une liste.
 
-## *Le tri par insertion*
+### **Question 3**
+
+    Implémentez une fonction qui permette de trouver l'indice du plus petit élément d'une liste.
+
+### **Question 4**
+
+    En utilisant les fonctions précédentes, implémentez l'algorithme de tri par sélection. Vous pouvez vous appuyer sur l'algorithme écrit précédemment
+    
+    et sur le code suivant :
+
+```python
+def tri_selection(liste):
+    for i in range(len(liste)):
+        # On cherche le plus petit élément de la liste
+        # On l'échange avec le premier élément non-trié
+```
+
+### **Question 5**
+
+    Testez votre algorithme sur une liste de 10000 éléments. Combien de temps met-il pour trier la liste ?
+
+## 4. *Le tri par insertion*
 
 Le tri par insertion est un algorithme de tri qui consiste à parcourir la liste et à insérer chaque élément à sa place dans une nouvelle liste. Pour insérer un élément à sa place dans la nouvelle liste, on le compare avec les éléments déjà présents dans la nouvelle liste. On insère l'élément à sa place dès qu'on trouve un élément plus grand que lui.
 
@@ -76,19 +97,19 @@ Le tri par insertion est un algorithme de tri qui consiste à parcourir la liste
 | 3 | [2, 4, 5, **3, 1**] | [2, 3, 4, 5] |
 | 4 | [2, 3, 4, 5, **1**] | [1, 2, 3, 4, 5] |
 
-### **Question 3**
+### **Question 6**
 
     Quelle est la complexité de cet algorithme ?
 
-### **Question 4**
+### **Question 7**
 
     Implémentez cet algorithme en Python.
 
-## *Autres algorithmes de tri*
+## 5. *Autres algorithmes de tri*
 
 Il existe de nombreux autres algorithmes de tri, le tri-fusion et le tri-rapide sont les plus connus. Ces algorithmes sont plus complexes à comprendre et à mettre en oeuvre. Cependant, ils sont beaucoup plus rapides que les algorithmes précédents. Vous les verrez plus en détail l'année prochaine.
 
-## Pour aller plus loin
+## 6. Pour aller plus loin
 
 Ces algorithmes fonctionnent pour trier des listes de nombres ou de mot car on sais comment les comparer. Mais comment trier une liste d'objets ? Par exemple, comment trier une liste de personnes ? Pour cela, il faut définir une fonction de comparaison qui permet de comparer deux personnes. On peut alors utiliser cette fonction de comparaison pour trier la liste de personnes.
 
